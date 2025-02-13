@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Happy Kiss Day By Abhay💋</title>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Bubblegum+Sans&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
@@ -45,6 +45,13 @@
             font-family: 'Pacifico', sans-serif;
             overflow: hidden;
             position: relative;
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
         
         .kiss-animation { animation: float 3s infinite ease-in-out; }
@@ -76,6 +83,7 @@
             margin-bottom: 30px;
             animation: textGlow 3s infinite;
             font-family: 'Bubblegum Sans', sans-serif;
+            width: 90%;
         }
 
         .heart-container {
@@ -98,11 +106,15 @@
             flex-direction: column;
             height: 100vh;
             color: white;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
         }
 
         .message-container {
             margin-bottom: 50px;
             text-align: center;
+            width: 100%;
         }
 
         .message-box {
@@ -114,6 +126,8 @@
             color: #ff69b4;
             backdrop-filter: blur(10px);
             animation: pulseGlow 2s infinite;
+            width: 90%;
+            box-sizing: border-box;
         }
 
         .kiss-button {
@@ -124,6 +138,8 @@
             padding: 15px 30px;
             box-shadow: 0 0 30px rgba(255, 105, 180, 0.5);
             margin-bottom: 20px;
+            width: 90%;
+            box-sizing: border-box;
         }
 
         .kiss-button:hover {
@@ -140,6 +156,8 @@
             padding: 20px 40px;
             margin-top: 50px;
             animation: pulseGlow 1.5s infinite;
+            width: 90%;
+            box-sizing: border-box;
         }
 
         .play-button:hover {
@@ -252,6 +270,5 @@
         // Continuously create falling hearts every 800ms
         setInterval(createHeart, 800);
     </script>
-    
 </body>
 </html>
