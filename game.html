@@ -67,6 +67,7 @@
             width: 50px; /* Adjust size for mobile */
             height: 50px; /* Adjust size for mobile */
             font-size: 1.5rem; /* Adjust font size for mobile */
+            margin: 0 10px; /* Add margin for spacing */
         }
         .absolute {
             padding: 10px; /* Add padding for better spacing on mobile */
@@ -80,6 +81,17 @@
             .absolute {
                 padding: 8px; /* Further adjust padding for smaller screens */
             }
+        }
+        .theme-selector-container {
+            position: absolute;
+            top: 4px;
+            right: 4px;
+            z-index: 50;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(4px);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -111,7 +123,7 @@
                                 font-bold z-50 bg-white/20 backdrop-blur-sm rounded-full px-4 md:px-6 py-2"></div>
 
         <!-- Theme Selector -->
-        <div class="absolute top-4 right-4 z-50">
+        <div class="theme-selector-container">
             <select id="theme-selector" class="px-4 md:px-6 py-2 md:py-3 rounded-full bg-white/40 backdrop-blur-sm text-teal-600 
                                              text-lg md:text-xl cursor-pointer hover:bg-white/60 transition-all">
                 <option value="romantic">🌸  Pink</option>
